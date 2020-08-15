@@ -1,0 +1,84 @@
+.contact-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.contact-item.mg {
+    margin: 0 5%;
+}
+
+.contact-item i {
+    color: var(--maincolor);
+    margin-bottom: 20px;
+}
+
+.contact-item h2 {
+    margin-bottom: 10px;
+}
+
+.contact-item h5 {
+    color: var(--graycolor);
+    margin-bottom: 30px;
+}
+
+.contact-input {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+    
+}
+
+.contact-input .input {
+    height: 30px;
+    width: 95%;
+    color: var(--graycolor);
+    background: var(--bg-gray);
+    border: 0;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 0.5;
+    transition: 0.2s border-color, 0.2s opacity;
+}
+
+.contact-input-subject {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    color: var(--graycolor);
+    background: var(--bg-gray);
+    border: 0;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 0.5;
+    -webkit-transition: 0.2s border-color, 0.2s opacity;
+    transition: 0.2s border-color, 0.2s opacity;
+}
+
+.contact-input-message {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+    background: var(--bg-gray);
+    border: 0;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 0.5;
+    -webkit-transition: 0.2s border-color, 0.2s opacity;
+    transition: 0.2s border-color, 0.2s opacity;
+}
+
+.contact .contact-main-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--maincolor);
+    color: var(--whitecolor);
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}

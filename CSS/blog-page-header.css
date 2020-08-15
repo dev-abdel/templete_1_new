@@ -1,0 +1,42 @@
+.blog-page {
+    background: var(--bg-gray);
+    text-align: center;
+}
+
+.blog-page-title {
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.breadcrumb {
+    margin-top: 60px;
+    text-align: center;
+}
+
+ul.breadcrumb {
+    float: right;
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    color: var(--maincolor);
+    text-decoration: none;
+  }
+  
+

@@ -1,0 +1,144 @@
+/*  1_common styles : 
+        1.0 opacity hover
+        1.1 section header
+        1.3 section padding
+        1.4 hover effect (left to right and top to bottom )
+        1.5 container
+        1.6 overlay
+
+    2_General CSS style
+
+    3_Sections:
+        3.0 header section
+        3.1 Home section 
+        3.2 About section 
+        3.3 Portfolio section 
+        3.4 Service section 
+        3.5 Prices section 
+        3.6 Team section 
+        3.7 Blog page 
+        3.8 Contact section
+        3.9 footer section
+ */
+
+ /* 1_common styles */
+
+ .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+.hover-opacity {
+    transition: opacity .5s;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+
+.ltr-effect, .ttb-effect {
+    position: relative;
+}
+
+.ltr-effect::after, .ttb-effect::after { 
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    z-index: -1;
+}
+
+.ltr-effect::after {
+    width: 0;
+    transition: width 0.5s;
+}
+
+.ttb-effect::after{
+    height: 0;
+    transition: height 0.5s;
+} 
+
+.ltr-effect:hover:after {
+    width: 100%;
+}
+
+.ttb-effect:hover:after {
+    height: 100%;
+}
+
+/* 2_General CSS style */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* css 3 */
+}
+
+:root {
+    --maincolor: #7e61ffb7;
+    --graycolor: #999;
+    --bg-gray  : #f9f9f9;
+    --whitecolor: white
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat,sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-y {
+    padding: 120px 0;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.header-section .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.header-section .line {
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--maincolor);
+    margin: 0 auto 70px auto;
+}
+
+div{
+    display: block;
+}

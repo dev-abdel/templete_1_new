@@ -1,0 +1,113 @@
+.pricing-item {
+    width: 30%;
+    float: left;
+    padding: 40px 15px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+.pricing-item.mg {
+    margin: 0 5%;
+}
+
+.pricing-item-text {
+    text-transform: uppercase;
+    font-size: 17px;   
+    color: var(--graycolor);
+    transition: color .5s;
+}
+
+
+.pricing-item-month {
+    width: 130px;
+    height: 130px;
+    padding: 20px 0;
+    transition: color .5s;
+    margin: 20px auto;
+    border: 2px solid var(--maincolor);
+    border-radius: 50%;
+}
+
+.pricing-item-month .dollar {
+    font-size: 40px;
+}
+
+.pricing-item-month .month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pricing-list {
+    list-style: none;
+}
+
+.pricing-list li {
+    color: var(--graycolor);
+    line-height: 2;
+}
+
+.pricing-item-button {
+    background: none;
+    border: 2px solid var(--maincolor);
+    display: block;
+    padding: 10px;
+    width: 180px;
+    margin: 20px auto;
+    color: var(--maincolor);
+} 
+
+.pricing-item:hover .pricing-item-month {
+    color: var(--whitecolor);
+}
+
+.pricing-item:hover .pricing-item-text {
+    color: var(--maincolor);
+}
+
+    /* testimonial section */
+
+.testimonial {
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.testimonial-content {
+    padding: 120px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.testimonial-item {
+    width: 50%;
+    float: left;
+    color: var(--whitecolor);
+}
+
+.testimonial-item .testimonial-toplayer {
+    padding: 10px 2px 40px 100px;
+    position: relative;
+}
+
+.testimonial-item .testimonial-toplayer img {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.testimonial-item .testimonial-toplayer h3 {
+    margin-bottom: 5px 0;
+}
+
+.testimonial-item .testimonial-toplayer span {
+    color: var(--maincolor);
+}
+
+.testimonial-desc {
+    line-height: 1.5;
+    font-size: 17px;
+}

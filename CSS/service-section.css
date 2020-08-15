@@ -1,0 +1,137 @@
+.service-item {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+
+.service-item.mg {
+    margin: 0 5%;
+}
+
+.service-item .icon {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    color: var(--maincolor);
+}
+
+.service-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color .5s;
+}
+
+.service-item-desc {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--graycolor);
+}
+
+.service-item:hover .service-item-title {
+    color: var(--whitecolor)te;
+}
+
+/* service : why choose us  */
+
+.why {
+    background: var(--bg-gray);
+}
+
+.why-item {
+    width: 50%;
+    float: left;
+}
+
+.why-item .header-section {
+    text-align: left;
+}
+
+.why-item .header-section .line {
+    margin: 0 0 50px 0;
+}
+
+.why-item-desc {
+    padding-right: 20px;
+    color: var(--graycolor);
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.why-list {
+    list-style: none;
+}
+
+.why-list li {
+    margin-bottom: 10px;
+    color: var(--graycolor);
+}
+
+.why-list li i {
+    border: 1px solid var(--maincolor);
+    border-radius: 50%;
+    color: var(--maincolor);
+    padding:  5px;
+}
+
+.why-item-img img {
+    width: 100%;
+}
+
+.why-bollets {
+    list-style: none;
+    text-align: center;
+}
+
+.why-bollets li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+.why-bollets li.active {
+    background-color: var(--maincolor);
+}
+
+.why-bollets li:hover {
+    background-color: var(--maincolor);
+}
+
+/* service : staetstics */
+
+.stat {
+    position: relative;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.stat-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.stat-item .icon {
+    color: var(--maincolor);
+    margin-bottom: 20px;
+}
+
+.stat-item-title {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--whitecolor);
+}
+
+.stat-item-text {
+    color: var(--whitecolor);
+}
+
